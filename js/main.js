@@ -17,13 +17,13 @@ $(document).ready(function() {
         
         //navigation fade
         onLeave: function (origin, destination, direction) {
-			if (destination.index < 1){
+			if (destination.index < 1 || destination.index > 2){
 				$('#fp-nav').addClass('off');
-			}
+			} 
 		},
 
         afterLoad: function (origin, destination, direction) {
-			if (destination.index >= 1){
+			if (destination.index >= 1 && destination.index <= 2){
 				$('#fp-nav').removeClass('off');
 			}
 		},
