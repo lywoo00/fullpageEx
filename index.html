@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,16 +10,42 @@
     <link rel="stylesheet" href="css/fullpage.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/fullpage.js"></script>
     <script src="js/main.js"></script>
 </head>
+
 <body>
-    <div id="fullpage">
-        <div class="section">Some section1</div>
-        <div class="section">Some section2</div>
-        <div class="section">Some section3</div>
-        <div class="section">Some section4</div>
-    </div>    
+    <div class="container">
+        <ul id="menu">
+            <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First slide</a></li>
+            <li data-menuanchor="secondPage" class=""><a href="#secondPage">Second slide</a></li>
+            <li data-menuanchor="3rdPage" class=""><a href="#3rdPage">Third slide</a></li>
+            <li data-menuanchor="4rdPage" class=""><a href="#4rdPage">Third slide</a></li>
+        </ul>
+
+        <div id="fullpage">
+            <div class="section" data-anchor="firstPage">Some section1</div>
+            <div class="section" data-anchor="secondPage">Some section2</div>
+            <div class="section" data-anchor="3rdPage">Some section3</div>
+            <div class="section" data-anchor="4rdPage">Some section4</div>
+        </div>
+    </div>
+
+    <!-- <div id="fp-nav" class="fp-right fp-show-active">
+        <ul>
+            <li><a href="#firstSlide" class=""><span class="fp-sr-only">Page 1</span><span></span></a>
+                <div class="fp-tooltip fp-right">Page 1</div>
+            </li>
+            <li><a href="#secondSlide" class="active"><span class="fp-sr-only">Page 2</span><span></span></a>
+                <div class="fp-tooltip fp-right">Page 2</div>
+            </li>
+            <li><a href="#3rdSlide" class=""><span class="fp-sr-only">Any text!</span><span></span></a>
+                <div class="fp-tooltip fp-right">Any text!</div>
+            </li>
+        </ul>
+    </div> -->
 </body>
+
 </html>
