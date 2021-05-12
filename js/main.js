@@ -14,12 +14,19 @@ $(document).ready(function() {
         navigationTooltips: ['firstPage', 'secondPage', '3rdPage', '4rdPage'],
         showActiveTooltip: true,
 
+        
+        //navigation fade
+        onLeave: function (origin, destination, direction) {
+			if (destination.index < 1){
+				$('#fp-nav').addClass('off');
+			}
+		},
 
-        // afterLoad: function (anchorLink, index) {
-		// 	if (index == 1){
-		// 		alert ('첫번째 인덱스');
-		// 	}
-		// },
+        afterLoad: function (origin, destination, direction) {
+			if (destination.index >= 1){
+				$('#fp-nav').removeClass('off');
+			}
+		},
 
 	});
     
