@@ -11,5 +11,17 @@ $(document).ready(function() {
         //Navigation
         navigation: true,
         navigationPosition: 'right',
+        navigationTooltips: ['firstPage', 'secondPage', '3rdPage', '4rdPage'],
+        showActiveTooltip: true,
+
+
+        // afterLoad: function (anchorLink, index) {
+		// 	if (index == 1){
+		// 		alert ('첫번째 인덱스');
+		// 	}
+		// },
+
 	});
+    
+    
 });
