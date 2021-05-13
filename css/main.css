@@ -5,6 +5,7 @@
 
 #fullpage .section {text-align: center;}
 
-#fp-nav {transition: .4s;}
+#fp-nav {opacity: 0; transition: .4s;}
 #fp-nav ul li:first-child {display: none;}
-#fp-nav.off {opacity: 0;}
+/* #fp-nav.on {opacity: 1;}
+#fp-nav.off {opacity: 0;} */
